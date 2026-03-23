@@ -16,7 +16,9 @@ Initial experiments focus on cardiovascular risk modelling using structured clin
 
 ## Dataset
 
-Heart Disease Dataset (Kaggle)
+This project uses the Heart Disease dataset available on Kaggle:
+
+https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
 
 The dataset includes clinical attributes such as:
 
@@ -32,7 +34,8 @@ The dataset includes clinical attributes such as:
 - Number of major vessels
 - Thalassemia status
 
-Patient identifiers have been removed to ensure anonymisation.
+The dataset is used for research and educational purposes.  
+All patient identifiers have been removed.
 
 ---
 
