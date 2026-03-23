@@ -92,14 +92,6 @@ This framework aims to evolve into a modular platform for:
 - Neuro-inspired AI Extensions
 
 ---
-## Data Source
-
-This project uses the Heart Disease dataset available on Kaggle:
-
-https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
-
-The dataset is used for research and educational purposes.  
-All patient identifiers have been removed.
 
 ## License
 
