@@ -1,71 +1,103 @@
-# Computational Decision Modeling Framework
+# Healthcare AI Modelling Framework
 
-A modular, research-grade framework for building, evaluating, and analysing advanced machine learning models in healthcare, cognitive science, and decision-making domains. This repository provides a flexible platform for experimentation, reproducibility, and academic research.
+A research-oriented framework for developing, evaluating, and interpreting machine learning models for healthcare risk prediction and decision modelling.
 
----
-
-## 🔎 Project Overview
-
-This framework is designed as a structured foundation for research-level AI modelling across domains such as:
-
-- Healthcare risk assessment  
-- Cognitive decision modelling  
-- Explainable and uncertainty-aware machine learning  
-- NeuroAI-inspired systems  
-- Time-series and longitudinal data modelling  
-
-It supports modular pipelines that can be extended for advanced academic experimentation and publication-ready workflows.
+This repository focuses on building reproducible pipelines for clinical data analysis, model benchmarking, and explainable AI experimentation.
 
 ---
 
-## 🎯 Core Objectives
+## Project Objective
 
-The key goals of this framework are:
+The goal of this project is to explore how machine learning can support clinical risk assessment by analysing relationships between physiological signals and disease outcomes.
 
-1. Create reusable and extensible data preprocessing pipelines.  
-2. Implement and benchmark classical and deep learning models.  
-3. Integrate explainability tools like SHAP for model interpretation.  
-4. Support uncertainty estimation for safe decision-making.  
-5. Enable reproducible and configurable experiment runs.  
-6. Provide structured results tracking for research documentation.
+Initial experiments focus on cardiovascular risk modelling using structured clinical datasets.
 
 ---
 
-## 🧠 Why This Framework?
+## Dataset
 
-Instead of standalone demo notebooks, this repository:
+Heart Disease Dataset (Kaggle)
 
-- Encourages **scientific experiments**, not tutorials.  
-- Is designed for **academic use and research workflows**.  
-- Supports **explainability and evaluation metrics**.  
-- Is easily extendable for **new modelling tasks**.
+The dataset includes clinical attributes such as:
 
-This makes it ideal for:
-- Publications
-- PhD-level research projects
-- Portfolio-quality demonstration code
+- Age and sex
+- Chest pain type
+- Resting blood pressure
+- Serum cholesterol
+- Fasting blood sugar
+- Electrocardiographic results
+- Maximum heart rate achieved
+- Exercise-induced angina
+- ST depression and slope
+- Number of major vessels
+- Thalassemia status
 
----
-
-## 🛠 Technologies
-
-All tools used are **free and open source**:
-
-| Category | Tools |
-|----------|-------|
-| Language | Python |
-| ML Libraries | scikit-learn, XGBoost, PyTorch |
-| Explainability | SHAP |
-| Fairness Evaluation | Fairlearn |
-| Visualization | Matplotlib, Seaborn |
-| Development | Jupyter Notebooks |
+Patient identifiers have been removed to ensure anonymisation.
 
 ---
 
-## ⚙️ Installation
+## Work Completed
 
-Clone the repository:
+### Data Acquisition
+- Programmatic dataset download using Kaggle API
+- Reproducible data loading pipeline
 
-```bash
-git clone https://github.com/hetanshipatel/healthcare-ai-modelling-framework.git
-cd healthcare-ai-modelling-framework
+### Data Exploration
+- Dataset structure inspection
+- Missing value analysis
+- Target distribution visualization
+- Statistical summary analysis
+
+### Data Preprocessing
+- Missing value handling using median imputation
+- Numeric conversion of clinical features
+- Correlation analysis for feature relationships
+
+### Baseline Modelling
+- Train-test split implementation
+- Random Forest baseline model
+- Performance evaluation
+- Feature importance analysis
+
+---
+
+## Key Insight
+
+Initial results demonstrate that certain clinical features show stronger predictive relevance for cardiovascular risk modelling. These insights guide future feature engineering and model development stages.
+
+---
+
+## Next Steps
+
+- Advanced model benchmarking (XGBoost, Neural Networks)
+- Explainability using SHAP
+- Uncertainty estimation
+- Bias and fairness analysis
+- Time-series clinical modelling
+- Extension to multi-disease prediction
+
+---
+
+## Research Direction
+
+This framework aims to evolve into a modular platform for:
+
+- Explainable Healthcare AI
+- Clinical Decision Modelling
+- Risk Stratification Systems
+- Trustworthy Machine Learning
+- Neuro-inspired AI Extensions
+
+---
+## Data Source
+
+This project uses the Heart Disease dataset available on Kaggle:
+
+https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
+
+The dataset is used for research and educational purposes.  
+All patient identifiers have been removed.
+
+## License
+
+MIT License
