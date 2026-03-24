@@ -61,6 +61,7 @@ All patient identifiers have been removed.
 - Random Forest baseline model
 - Performance evaluation
 - Feature importance analysis
+- Advanced model benchmarking (XGBoost, Neural Networks)
 
 ---
 
@@ -72,7 +73,6 @@ Initial results demonstrate that certain clinical features show stronger predict
 
 ## Next Steps
 
-- Advanced model benchmarking (XGBoost, Neural Networks)
 - Explainability using SHAP
 - Uncertainty estimation
 - Bias and fairness analysis
