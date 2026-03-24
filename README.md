@@ -65,10 +65,15 @@ All patient identifiers have been removed.
 
 ---
 
-## Key Insight
+## Key Insights
 
-Initial results demonstrate that certain clinical features show stronger predictive relevance for cardiovascular risk modelling. These insights guide future feature engineering and model development stages.
+Initial experimental results indicate that classical ensemble methods such as Random Forest achieve strong predictive performance on structured clinical datasets.
 
+The neural network model demonstrated similar accuracy to Random Forest, suggesting that deep learning architectures may not always provide performance advantages when dataset size is limited and feature complexity is moderate.
+
+XGBoost did not outperform the baseline model, highlighting the importance of empirical evaluation rather than assuming boosting methods will consistently yield superior results.
+
+These findings align with existing research literature indicating that tree-based ensemble methods often perform competitively on tabular healthcare data.
 ---
 
 ## Next Steps
