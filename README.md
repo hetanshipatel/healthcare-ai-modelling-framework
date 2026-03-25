@@ -62,6 +62,7 @@ All patient identifiers have been removed.
 - Performance evaluation
 - Feature importance analysis
 - Advanced model benchmarking (XGBoost, Neural Networks)
+- Explainability using SHAP
 
 ---
 
@@ -73,12 +74,13 @@ The neural network model demonstrated similar accuracy to Random Forest, suggest
 
 XGBoost did not outperform the baseline model, highlighting the importance of empirical evaluation rather than assuming boosting methods will consistently yield superior results.
 
-These findings align with existing research literature indicating that tree-based ensemble methods often perform competitively on tabular healthcare data.
+SHAP-based explainability analysis revealed clinically relevant feature contributions, improving model interpretability and supporting the development of transparent healthcare AI systems.
+
+These findings highlight the importance of empirical model evaluation, dataset characteristics, and interpretability considerations in clinical machine learning research.
 ---
 
 ## Next Steps
 
-- Explainability using SHAP
 - Uncertainty estimation
 - Bias and fairness analysis
 - Time-series clinical modelling
