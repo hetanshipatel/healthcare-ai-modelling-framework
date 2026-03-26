@@ -56,13 +56,18 @@ All patient identifiers have been removed.
 - Numeric conversion of clinical features
 - Correlation analysis for feature relationships
 
-### Baseline Modelling
+### Modelling & Evaluation
 - Train-test split implementation
 - Random Forest baseline model
-- Performance evaluation
+- XGBoost model implementation
+- Neural Network (MLP) implementation
+- Model performance comparison
 - Feature importance analysis
-- Advanced model benchmarking (XGBoost, Neural Networks)
-- Explainability using SHAP
+- ROC-AUC evaluation
+
+### Explainability
+- Model interpretability using SHAP
+- Feature contribution analysis for clinical insights
 
 ---
 
@@ -83,10 +88,9 @@ ROC-AUC analysis further confirmed strong model performance, with all models ach
 
 ## Next Steps
 
-- Uncertainty estimation
-- Bias and fairness analysis
-- Time-series clinical modelling
-- Extension to multi-disease prediction
+- Cross-validation to assess model generalizability
+- Hyperparameter tuning for model optimisation (especially XGBoost)
+- Confusion matrix analysis for clinical error interpretation
 
 ---
 
