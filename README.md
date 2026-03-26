@@ -77,6 +77,8 @@ XGBoost did not outperform the baseline model, highlighting the importance of em
 SHAP-based explainability analysis revealed clinically relevant feature contributions, improving model interpretability and supporting the development of transparent healthcare AI systems.
 
 These findings highlight the importance of empirical model evaluation, dataset characteristics, and interpretability considerations in clinical machine learning research.
+
+ROC-AUC analysis further confirmed strong model performance, with all models achieving high discriminative capability, while also highlighting the need to consider potential overfitting due to near-perfect scores.
 ---
 
 ## Next Steps
