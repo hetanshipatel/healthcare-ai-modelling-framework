@@ -64,6 +64,7 @@ All patient identifiers have been removed.
 - Model performance comparison
 - Feature importance analysis
 - ROC-AUC evaluation
+- Cross-validation to assess model generalizability
 
 ### Explainability
 - Model interpretability using SHAP
@@ -85,11 +86,12 @@ These findings highlight the importance of empirical model evaluation, dataset c
 
 ROC-AUC analysis further confirmed strong model performance, with all models achieving high discriminative capability, while also highlighting the need to consider potential overfitting due to near-perfect scores.
 
+Cross-validation results showed near-perfect performance across folds, suggesting strong model stability while also indicating potential dataset simplicity or overfitting risk.
+
 ---
 
 ## Next Steps
 
-- Cross-validation to assess model generalizability
 - Hyperparameter tuning for model optimisation (especially XGBoost)
 - Confusion matrix analysis for clinical error interpretation
 
