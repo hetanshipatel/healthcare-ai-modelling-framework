@@ -65,6 +65,7 @@ All patient identifiers have been removed.
 - Feature importance analysis
 - ROC-AUC evaluation
 - Cross-validation to assess model generalizability
+- Confusion matrix analysis for clinical error interpretation
 
 ### Explainability
 - Model interpretability using SHAP
@@ -88,12 +89,13 @@ ROC-AUC analysis further confirmed strong model performance, with all models ach
 
 Cross-validation results showed near-perfect performance across folds, suggesting strong model stability while also indicating potential dataset simplicity or overfitting risk.
 
+Confusion matrix results showed zero false positives and very few false negatives, indicating high precision while emphasizing the importance of detecting all positive cases in clinical settings.
+
 ---
 
 ## Next Steps
 
 - Hyperparameter tuning for model optimisation (especially XGBoost)
-- Confusion matrix analysis for clinical error interpretation
 
 ---
 
