@@ -1,116 +1,141 @@
 # Healthcare AI Modelling Framework
 
-A research-oriented framework for developing, evaluating, and interpreting machine learning models for healthcare risk prediction and decision modelling.
+A research-oriented framework for developing, evaluating, and interpreting machine learning models for healthcare risk prediction and clinical decision modelling.
 
-This repository focuses on building reproducible pipelines for clinical data analysis, model benchmarking, and explainable AI experimentation.
-
----
-
-## Project Objective
-
-The goal of this project is to explore how machine learning can support clinical risk assessment by analysing relationships between physiological signals and disease outcomes.
-
-Initial experiments focus on cardiovascular risk modelling using structured clinical datasets.
+This project demonstrates an end-to-end experimental pipeline for structured clinical data, combining predictive modelling, explainable AI, and robust validation techniques.
 
 ---
 
-## Dataset
+## 🔎 Project Overview
+
+The objective of this project is to investigate how machine learning models can support clinical risk assessment by learning patterns from physiological and diagnostic features.
+
+The initial study focuses on cardiovascular risk prediction using a structured clinical dataset, with emphasis on:
+
+- Model comparison across different learning paradigms  
+- Explainability and interpretability  
+- Robust evaluation and validation  
+- Practical relevance to healthcare decision-making  
+
+---
+
+## 📊 Dataset
 
 This project uses the Heart Disease dataset available on Kaggle:
 
 https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
 
-The dataset includes clinical attributes such as:
+The dataset includes key clinical attributes:
 
-- Age and sex
-- Chest pain type
-- Resting blood pressure
-- Serum cholesterol
-- Fasting blood sugar
-- Electrocardiographic results
-- Maximum heart rate achieved
-- Exercise-induced angina
-- ST depression and slope
-- Number of major vessels
-- Thalassemia status
+- Demographics: age, sex  
+- Clinical measurements: blood pressure, cholesterol, blood sugar  
+- Cardiac indicators: ECG results, heart rate, angina  
+- Diagnostic features: ST depression, vessel count, thalassemia  
 
-The dataset is used for research and educational purposes.  
-All patient identifiers have been removed.
+All patient identifiers have been removed, and the dataset is used strictly for research and educational purposes.
 
 ---
 
-## Work Completed
+## ⚙️ Methodology
+
+The project follows a structured experimental pipeline:
+
+1. Data acquisition using Kaggle API  
+2. Data exploration and statistical analysis  
+3. Data preprocessing and cleaning  
+4. Model training and evaluation  
+5. Explainability analysis  
+6. Validation and performance assessment  
+7. Model optimisation  
+
+---
+
+## 🧪 Work Completed
 
 ### Data Acquisition
-- Programmatic dataset download using Kaggle API
-- Reproducible data loading pipeline
+- Programmatic dataset download using Kaggle API  
+- Reproducible data loading pipeline  
 
 ### Data Exploration
-- Dataset structure inspection
-- Missing value analysis
-- Target distribution visualization
-- Statistical summary analysis
+- Dataset structure inspection  
+- Missing value analysis  
+- Target distribution visualisation  
+- Statistical summary analysis  
 
 ### Data Preprocessing
-- Missing value handling using median imputation
-- Numeric conversion of clinical features
-- Correlation analysis for feature relationships
+- Missing value handling using median imputation  
+- Numeric conversion of clinical features  
+- Correlation analysis for feature relationships  
 
 ### Modelling & Evaluation
-- Train-test split implementation
-- Random Forest baseline model
-- XGBoost model implementation
-- Neural Network (MLP) implementation
-- Model performance comparison
-- Feature importance analysis
-- ROC-AUC evaluation
-- Cross-validation to assess model generalizability
-- Confusion matrix analysis for clinical error interpretation
+- Train-test split implementation  
+- Random Forest baseline model  
+- XGBoost model implementation  
+- Neural Network (MLP) implementation  
+- Model performance comparison  
+- Feature importance analysis  
+- ROC-AUC evaluation  
+- Cross-validation for generalisation assessment  
+- Confusion matrix for clinical error analysis  
 
 ### Explainability
-- Model interpretability using SHAP
-- Feature contribution analysis for clinical insights
+- SHAP-based model interpretation  
+- Feature contribution analysis for clinical insights  
+
+### Optimisation
+- Hyperparameter tuning for XGBoost  
+- Significant performance improvement after optimisation  
 
 ---
 
-## Key Insights
+## 📈 Key Insights
 
-Initial experimental results indicate that classical ensemble methods such as Random Forest achieve strong predictive performance on structured clinical datasets.
-
-The neural network model demonstrated similar accuracy to Random Forest, suggesting that deep learning architectures may not always provide performance advantages when dataset size is limited and feature complexity is moderate.
-
-XGBoost did not outperform the baseline model, highlighting the importance of empirical evaluation rather than assuming boosting methods will consistently yield superior results.
-
-SHAP-based explainability analysis revealed clinically relevant feature contributions, improving model interpretability and supporting the development of transparent healthcare AI systems.
-
-These findings highlight the importance of empirical model evaluation, dataset characteristics, and interpretability considerations in clinical machine learning research.
-
-ROC-AUC analysis further confirmed strong model performance, with all models achieving high discriminative capability, while also highlighting the need to consider potential overfitting due to near-perfect scores.
-
-Cross-validation results showed near-perfect performance across folds, suggesting strong model stability while also indicating potential dataset simplicity or overfitting risk.
-
-Confusion matrix results showed zero false positives and very few false negatives, indicating high precision while emphasizing the importance of detecting all positive cases in clinical settings.
+- Random Forest demonstrated strong and stable performance on structured clinical data.  
+- Neural Networks achieved comparable results, indicating limited advantage of deep learning in small tabular datasets.  
+- XGBoost initially underperformed but improved significantly after hyperparameter tuning.  
+- SHAP analysis revealed clinically meaningful feature contributions, enhancing interpretability.  
+- ROC-AUC results showed strong discriminative performance across all models.  
+- Cross-validation confirmed model stability, though near-perfect scores suggest possible dataset simplicity or overfitting.  
+- Confusion matrix analysis showed high precision with minimal false negatives, highlighting strong predictive reliability with minor clinical risk.  
+- Model performance is highly dependent on dataset characteristics and proper optimisation.  
 
 ---
 
-## Next Steps
+## 🧠 Research Significance
 
-- Hyperparameter tuning for model optimisation (especially XGBoost)
+This project demonstrates key principles in applied machine learning for healthcare:
 
----
+- Empirical model comparison is essential  
+- Interpretability is critical for clinical applications  
+- High accuracy alone is insufficient without validation  
+- Model selection must consider dataset size and structure  
 
-## Research Direction
-
-This framework aims to evolve into a modular platform for:
-
-- Explainable Healthcare AI
-- Clinical Decision Modelling
-- Risk Stratification Systems
-- Trustworthy Machine Learning
-- Neuro-inspired AI Extensions
+The findings align with existing literature where ensemble tree-based models perform strongly on tabular healthcare data.
 
 ---
 
-## License
+## 🚀 Next Steps
+
+- Extend validation using additional datasets  
+- Explore advanced hyperparameter optimisation techniques  
+- Incorporate calibration and uncertainty estimation  
+- Evaluate fairness and bias across subgroups  
+- Expand to multi-disease prediction frameworks  
+
+---
+
+## 🔬 Research Direction
+
+This framework is designed to evolve into a modular research platform for:
+
+- Explainable Healthcare AI  
+- Clinical Decision Support Systems  
+- Risk Stratification Models  
+- Trustworthy Machine Learning  
+- Neuro-inspired AI systems  
+
+---
+
+## 📜 License
 
 MIT License
